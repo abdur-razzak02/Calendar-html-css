@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 40px;
+}
+.month-name{
+    font-size: 25px;
+    margin: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.date-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+    margin: 0 50px;
+}
+.date, .day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.day{
+    background-color: bisque;
+}
+.another-month{
+    color: gray;
+    font-weight: 500;
+}
